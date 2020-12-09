@@ -1,4 +1,6 @@
 year = 2020
 day = 7
+=======
+day = 6
 editor = "vim"
 pager = "less"
