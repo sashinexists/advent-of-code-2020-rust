@@ -25,7 +25,7 @@ pub fn run() {
 }
 
 fn all_bags_that_can_contain_colour(bags: HashMap<String,Vec<String>>, colour:&str) -> Vec<String> {
-    let mut bag_parents = bags[colour].clone();
+    let bag_parents = bags[colour].clone();
     let mut all_bags = bag_parents.clone();
     for parent in bag_parents {
         let possible_parents = all_bags_that_can_contain_colour(bags.clone(), &parent);
